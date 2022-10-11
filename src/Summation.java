@@ -12,8 +12,7 @@ public class Summation {
 
         for (int i = length-1; i >= 0; i--) {
             sum += input / Math.pow(10, i);
-            System.out.println(sum);
-            input -= (input / Math.pow(10, i) * Math.pow(10, length));
+            input %= Math.pow(10, i);
         }
 
         System.out.println(sum);
