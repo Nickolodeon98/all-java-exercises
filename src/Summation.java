@@ -5,16 +5,11 @@ public class Summation {
         Scanner sc = new Scanner(System.in);
 
         int input = sc.nextInt();
-
-        int length = String.valueOf(input).length();
-
         int sum = 0;
 
-        for (int i = length-1; i >= 0; i--) {
-            sum += input / Math.pow(10, i);
-            input %= Math.pow(10, i);
+        while (input != 0) {
+            sum += input % 10; // sum = 123
+            input /= 10; // 123 / 10 = 12...3
         }
-
-        System.out.println(sum);
     }
 }
