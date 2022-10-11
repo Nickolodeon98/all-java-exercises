@@ -8,8 +8,8 @@ public class Summation {
         int sum = 0;
 
         while (input != 0) {
-            sum += input % 10; // sum = 123
-            input /= 10; // 123 / 10 = 12...3
+            sum += input % 10; // sum = 123 % 10 = 3
+            input /= 10; // 123 / 10 = 12
         }
     }
 }
