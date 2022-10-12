@@ -1,18 +1,18 @@
 package week4.codeup;
 
-public class Max02 {
-    public int[] getMax(int[] arr, int maxValue, int maxIdx) {
+public class MaxMinForMatrix {
+    public int[] getMax(int[] arr, int value, int idx) {
         for (int i = 1; i < arr.length; i++) {
-            if (maxValue < arr[i]) {
-                maxValue = arr[i];
-                maxIdx = i;
+            if (value < arr[i]) {
+                value = arr[i];
+                idx = i;
             }
         }
-        return new int[]{maxValue, maxIdx};
+        return new int[]{value, idx};
     }
 
     public static void main(String[] args) {
-        Max02 max = new Max02();
+        MaxMinForMatrix max = new MaxMinForMatrix();
 
         int[][] grid = new int[][]{
                 {3,23,85,34,17,74,25,52,65},
@@ -34,6 +34,7 @@ public class Max02 {
         for (int i = 0; i < grid.length; i++) {
             info = max.getMax(grid[i], maxValue, columnValue);
             if (maxValue != info[0]) rowValue = i;
+
             maxValue = info[0];
             columnValue = info[1];
         }

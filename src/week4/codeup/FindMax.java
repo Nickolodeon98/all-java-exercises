@@ -12,4 +12,10 @@ public class FindMax implements MinOrMax<Max>{
     public Max numList() {
         return new Max(99, "This is maximum number");
     }
+
+    @Override
+    public String getStr() {
+        Max max = new Max(99, "This is a maximum number");
+        return max.getMaxStr();
+    }
 }

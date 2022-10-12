@@ -12,4 +12,10 @@ public class FindMin implements MinOrMax<Min> {
     public Min numList() {
         return new Min(-1, "This is minimum number.");
     }
+
+    @Override
+    public String getStr() {
+        Min min = new Min(-1, "This is a minimum number");
+        return min.getMinStr();
+    }
 }
