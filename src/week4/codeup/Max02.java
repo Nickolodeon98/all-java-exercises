@@ -39,6 +39,5 @@ public class Max02 {
         }
 
         System.out.printf("최대값은 %d 이고 %d 행 %d 열에 위치합니다.", maxValue, rowValue+1, columnValue+1);
-
     }
 }
