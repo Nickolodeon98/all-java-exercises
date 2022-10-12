@@ -1,4 +1,4 @@
-package codeup;
+package week4.codeup;
 
 import java.util.Scanner;
 
