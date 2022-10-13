@@ -10,14 +10,7 @@ public class Hospital {
     private String subdivision;
 
     public String clean(String str) {
-        StringBuilder sb = new StringBuilder();
-        if (str.contains("\'")) {
-            String a = str.substring(0, str.indexOf('\''));
-            String b = str.substring(str.indexOf('\'') + 1, str.length());
-            sb.append(a);
-            sb.append(b);
-            return sb.toString();
-        }
+        str.replaceAll("\'", "");
         return str;
     }
     public Hospital(String id, String address, String category, String emergencyRoom, String name) {
