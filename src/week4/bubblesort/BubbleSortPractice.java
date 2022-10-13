@@ -11,11 +11,11 @@ public class BubbleSortPractice {
 
     public void sort() {
         for (int i = 0; i < array.length-1; i++) {
-            for (int j = 1; j < array.length; j++) {
-                if (array[j] < array[j-1]) {
+            for (int j = i+1; j < array.length; j++) {
+                if (array[j] < array[i]) {
                     int temp = array[j];
-                    array[j] = array[j-1];
-                    array[j-1] = temp;
+                    array[j] = array[i];
+                    array[i] = temp;
                 }
             }
         }
