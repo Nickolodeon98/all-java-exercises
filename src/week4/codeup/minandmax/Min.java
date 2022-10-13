@@ -1,4 +1,4 @@
-package week4.codeup;
+package week4.codeup.minandmax;
 
 public class Min {
     private int minNum;

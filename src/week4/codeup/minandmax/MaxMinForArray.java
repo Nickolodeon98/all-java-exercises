@@ -1,4 +1,4 @@
-package week4.codeup;
+package week4.codeup.minandmax;
 
 public class MaxMinForArray {
     public int[] getMax(int[] arr) {

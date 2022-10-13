@@ -1,6 +1,4 @@
-package week4.codeup;
-
-import java.util.List;
+package week4.codeup.minandmax;
 
 public class FindMax implements MinOrMax<Max>{
     @Override
