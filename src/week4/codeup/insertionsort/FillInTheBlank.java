@@ -22,7 +22,14 @@ public class FillInTheBlank {
             arr[i] = sc.nextInt();
 
         for (i = 2; i <= n; i++) {
-
+            key = arr[i];
+            for (j = i-1; j >= 1; j--) {
+                if (arr[j+1] < arr[j])
+                {
+                    arr[j+1] = arr[j];
+                }
+                arr[j+1] = key;
+            }
         }
     }
 }

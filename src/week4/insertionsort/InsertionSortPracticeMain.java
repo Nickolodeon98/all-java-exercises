@@ -7,7 +7,7 @@ public class InsertionSortPracticeMain {
         int[] arr = {8, 5, 6, 2, 4};
 
         InsertionSortPractice insertionSortPractice = new InsertionSortPractice();
-        int[] resultArr = insertionSortPractice.sort(arr, 1);
+        int[] resultArr = insertionSortPractice.sort(arr);
 
 
 
